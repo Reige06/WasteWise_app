@@ -41,7 +41,7 @@ export default function Dashboard() {
     };
 
     fetchBinStatus(); // fetch immediately
-    intervalId = setInterval(fetchBinStatus, 10000); // refresh every 10s
+    intervalId = setInterval(fetchBinStatus, 10000);
 
     return () => clearInterval(intervalId);
   }, []);
